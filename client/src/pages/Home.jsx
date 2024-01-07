@@ -45,6 +45,12 @@ const Home = () => {
                 handleClick={() => state.intro = false}
                 customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
+              <CustomButton 
+                type="filled"
+                title="Shop"
+                handleClick={() => state.intro = false}
+                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+              />
             </motion.div>
           </motion.div>
         </motion.section>
