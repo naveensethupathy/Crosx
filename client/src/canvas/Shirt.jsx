@@ -5,7 +5,7 @@ import React from "react";
 import { easing } from "maath";
 import { useSnapshot } from "valtio";
 import { useFrame } from "@react-three/fiber";
-import { Decal, useGLTF, useTexture } from "@react-three/drei";
+import { Decal, OrbitControls, useGLTF, useTexture } from "@react-three/drei";
 import state from "../store";
 const Shirt = () => {
   const snap = useSnapshot(state);
@@ -36,13 +36,14 @@ const Shirt = () => {
           <Decal 
             position={[0, 0.04, 0.15]}
             rotation={[0, 0, 0]}
-            scale={0.15}
+            scale={0.25}
             map={logoTexture}
             // map-anisotropy={16}
             depthTest={false}
             depthWrite={true}
           />
         )}
+       
       </mesh>
     </group>
   );

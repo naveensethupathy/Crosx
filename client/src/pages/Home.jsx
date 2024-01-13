@@ -1,6 +1,9 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSnapshot } from 'valtio';
-
+import {Routes, Route, useNavigate} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import state from '../store';
 import { CustomButton } from '../components';
 import {
@@ -10,10 +13,14 @@ import {
   slideAnimation
 } from '../config/motion';
 
-const Home = () => {
+
+import ShopButton from '../components/ShopButton';
+const Home = (props) => {
   const snap = useSnapshot(state);
+  const intro = props.intro;
 
   return (
+    <div>
     <AnimatePresence>
       {snap.intro && (
         <motion.section className="home" {...slideAnimation('left')}>
@@ -45,17 +52,26 @@ const Home = () => {
                 handleClick={() => state.intro = false}
                 customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
-              <CustomButton 
+              
+              
+              <ShopButton
                 type="filled"
-                title="Shop"
-                handleClick={() => state.intro = false}
-                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
-              />
+                title="shop"
+                
+                customStyles="w-fit px-4 py-2.5 font-bold text-sm">
+
+              </ShopButton>
+              
+
+
             </motion.div>
           </motion.div>
         </motion.section>
       )}
+      
     </AnimatePresence>
+    
+    </div>
   )
 }
 

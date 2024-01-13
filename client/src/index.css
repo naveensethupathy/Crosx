@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
 @import url("https://rsms.me/inter/inter.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,7 +16,7 @@ html {
 }
 
 .app {
-  @apply relative w-full h-screen overflow-hidden;
+  @apply relative w-full h-screen ;
 }
 
 .home {
@@ -90,3 +90,74 @@ input[type="file"] {
 .sketch-picker > div:nth-child(3) {
   display: none !important;
 }
+
+.card{
+
+  font-family:Poppins;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px;
+ 
+  margin-right: 0;
+  
+  
+}
+.card > img{
+  
+  object-fit: cover;
+}
+
+.shop{
+  text-align: center;
+}
+.card h1{
+  font-family:Poppins;
+  font-weight: medium;
+  font-size: 30px;
+
+}
+.shop h1 img{
+  height: 10%;
+  width: 11%;
+  display: inline;
+  margin: 0;
+}
+.shop h1 {
+  display: block;
+}
+.shopdiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+ 
+    
+
+}
+@media screen and (min-width:600px) {
+  .card{grid-template-columns: repeat(2,1fr);}
+  
+}
+@media screen and (min-width:900px) {
+  .card{grid-template-rows: repeat(4,1fr);}
+  
+}
+.shopcard{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2px;
+}
+.shopcard img{
+  height: 400px;
+  
+}
+.shopcard h1{
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+} 
