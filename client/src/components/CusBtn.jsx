@@ -34,7 +34,7 @@ export default function CusBtn({ type, title, customStyles, logo,color }) {
     <button
     className={`px-2 py-1.5 flex-1 rounded-md ${customStyles}`}
     style={generateStyle(type)}
-    onClick={() => {navigate("/Customizer"); 
+    onClick={() => {navigate("/Crosx/Customizer"); 
     state.intro=false;
     state.logoDecal= logo;
     state.color=color;

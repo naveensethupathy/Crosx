@@ -34,7 +34,7 @@ export default function ShopButton({ type, title, customStyles,  }) {
     <button
     className={`px-2 py-1.5 flex-1 rounded-md ${customStyles}`}
     style={generateStyle(type)}
-    onClick={() => navigate("/Shop")}
+    onClick={() => navigate("/Crosx/Shop")}
   >
     {title}
     
