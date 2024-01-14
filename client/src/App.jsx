@@ -18,7 +18,7 @@ function App() {
         {/* <Route path="/Crosx" element={[<Home/>,<Canvas/>,<Customizer/>]} /> */}
         <Route path="/customizer" element={[<Home/>,<Customizer/>,<Canvas/>]} />
         <Route path="/" element={<Canvas />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/Shop" element={<Shop/>} />
           
         </Routes>
       

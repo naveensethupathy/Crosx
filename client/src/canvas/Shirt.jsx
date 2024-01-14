@@ -7,9 +7,10 @@ import { useSnapshot } from "valtio";
 import { useFrame } from "@react-three/fiber";
 import { Decal, OrbitControls, useGLTF, useTexture } from "@react-three/drei";
 import state from "../store";
+// import { shirt,reactpng,threejs } from "../../public";
 const Shirt = () => {
   const snap = useSnapshot(state);
-  const { nodes, materials } = useGLTF("/shirt_baked.glb");
+  const { nodes, materials } = useGLTF("/Crosx/shirt_baked.glb");
   const logoTexture = useTexture(snap.logoDecal);
   const isFullTexture = useTexture(snap.fullDecal);
   useFrame((state, delta) => easing.dampC(materials.lambert1.color,snap.color,0.25,delta));
