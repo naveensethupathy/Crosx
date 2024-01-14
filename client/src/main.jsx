@@ -15,9 +15,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <HashRouter>
+   {/* <HashRouter>
     <App />
-    </HashRouter>  
-    {/* <RouterProvider router={router}/> */}
+    </HashRouter>   */}
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )
