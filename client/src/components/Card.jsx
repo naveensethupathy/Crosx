@@ -10,11 +10,11 @@ function ShopCard(props) {
       <img src={props.img}></img>
       <h1>{props.name}</h1>
       <p>Male T-shirt</p>
-      <p>Rs. 500</p>
+      <p>{props.price}</p>
       <CusBtn
         type="filled"
-        title="Customize"
-        customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+        title="View"
+        customStyles="w-fit px-4 py-2 font-medium text-sm"
         logo= {props.logo}
         color = {props.color}
       />

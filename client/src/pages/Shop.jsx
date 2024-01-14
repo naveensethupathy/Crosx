@@ -27,6 +27,7 @@ function createCard(cloths){
     img = {cloths.img}
     logo = {cloths.logo}
     color = {cloths.color}
+    price = {cloths.price}
   />
 }
 function Shop() {

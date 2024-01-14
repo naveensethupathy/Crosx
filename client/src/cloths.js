@@ -6,7 +6,8 @@ import {flyhigh,
     zoropng,
     luffypng,
     kidpng,
-    flyhighpng } from "./assets/tspic"
+    flyhighpng,
+    jk01,lf02,heal,sunday, jukapng,luffpng,sundaypng,worldpng } from "./assets/tspic"
 const cloths = [
     {
     name:"Zoro T-shirt",
@@ -40,7 +41,38 @@ const cloths = [
         logo: flyhighpng,
         color:"#FFFFFF"
     },
-
+    {
+        name:"Jutusu T-shirt",
+        type:"Men T-shirt",
+        img:jk01,
+        price:"Rs.499",
+        logo: jukapng,
+        color:"#D6A8FF"
+    },
+    {
+        name:"Red Luffy T-shirt",
+        type:"Men T-shirt",
+        img:lf02,
+        price:"Rs.499",
+        logo: luffpng,
+        color:"#a91726"
+    },
+    {
+        name:"Yellow Aesthic T-shirt",
+        type:"Men T-shirt",
+        img:sunday,
+        price:"Rs.499",
+        logo: sundaypng,
+        color:"#EFBD48"
+    },
+    {
+        name:"Red T-shirt",
+        type:"Men T-shirt",
+        img:heal,
+        price:"Rs.499",
+        logo: worldpng,
+        color:"#a91726"
+    },
 ]
 
 export default cloths
